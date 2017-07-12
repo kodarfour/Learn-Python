@@ -1,4 +1,4 @@
-print('Chapter 3:')
+gprint('Chapter 3:')
 
 #lists quick review
 #in a slice it is in the [first:last:step]
