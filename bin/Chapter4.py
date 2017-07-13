@@ -12,13 +12,17 @@ muscular = True
 hairy = True
 if muscular:
 	if hairy:
+	#this is if it is muscular AND hairy
 		print('Found a bear.')
 	else:
+	#this is if its JUST muscular	
 		print('That\'s a bodybuilder.')
 else: 
 	if hairy:
+	#this is if its JUST hairy
 		print('It\'s a hamster.')
 	else:
+	#this is if its NEITHER muscular OR hairy
 		print('EWW! There is a naked mole-rat!')	
 
 print('\nRepeat with while:\n')
@@ -38,3 +42,4 @@ while True:
 	if rdm == "q": #quit
 		break
 	print(rdm.capitalize())
+	#capitalizes the first letter of what the user inputs
