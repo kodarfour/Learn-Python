@@ -1,6 +1,6 @@
 print("Chapter 4: \n")
 
-print("Compare with if, elif and else:\n")
+print("Part 4.1:\n")
 
 smart = True
 if smart:
@@ -50,7 +50,7 @@ elif beverage == 'hennesey':
 else:
 	print('I\'ve never heard of this drink. It must be magical.\n')
 
-print('\nRepeat with while:\n')
+print('\nPart 4.2:\n')
 
 count = 1
 while count <= 9:

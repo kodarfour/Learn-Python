@@ -5,7 +5,7 @@ print('Chapter 3:')
 #the .append() function adds an item to the end of the list
 
 
-print('\nSets:')
+print('Part 3.4:\n')
 
 programmers = ['Kofi','Danielle','Bill']
 languages = ['Python','JavaScript','C#']
