@@ -62,8 +62,19 @@ while count <= 9:
 print("Python Compiler: Finished!\n")
 
 while True:
-	rdm = input("Automatic String Capitalizer, Try It! (type q to quit): ")
-	if rdm == "q": #quit
+	rdm = input('Automatic String Capitalizer, Try It! (type q to quit): ')
+	if rdm == 'q': #quit
 		break
 	print(rdm.capitalize())
 	#capitalizes the first letter of what the user inputs
+
+while True:
+	value = input('Give me an integer and I\'ll surprise you (type q to quit): ')
+	if value == 'q':
+	#quits the program
+		break
+	number = int(value)
+	if number % 2 == 0:
+		continue
+		#skips the print statement if number is equal
+	print(number, "squared is", number*number)
