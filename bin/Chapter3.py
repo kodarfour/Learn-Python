@@ -1,18 +1,18 @@
-print('Chapter 3:')
+print('Chapter 3')
 
 #lists quick review
 #in a slice it is in the [first:last:step]
 #the .append() function adds an item to the end of the list
 
 
-print('Part 3.4:\n')
+print('Part 3.4, Sets:\n')
 
 programmers = ['Kofi','Danielle','Bill']
 languages = ['Python','JavaScript','C#']
 employers = ['Google','Amazon','Micro$oft']
 
 tuple_of_lists = (programmers,languages,employers)
-#tuples dont have to have a parenthesis around them but it makes it easier to see
+#tuples dont have to have a parenthesis around them but it makes it easier to notice
 list_of_lists = [programmers,languages,employers]
 dict_of_lists = {'Programmers' : programmers, 'Languages' : languages,
 'Employers' : employers}

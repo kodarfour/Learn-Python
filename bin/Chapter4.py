@@ -1,6 +1,6 @@
-print("Chapter 4: \n")
+print("Chapter 4\n")
 
-print("Part 4.1:\n")
+print("Part 4.1, Compare with if, elif, and else:\n")
 
 smart = True
 if smart:
@@ -50,7 +50,7 @@ elif beverage == 'hennesey':
 else:
 	print('I\'ve never heard of this drink. It must be magical.\n')
 
-print('\nPart 4.2:\n')
+print('\nPart 4.2, Repeat with while:\n')
 
 count = 1
 while count <= 9:
@@ -69,12 +69,54 @@ while True:
 	#capitalizes the first letter of what the user inputs
 
 while True:
-	value = input('Give me an integer and I\'ll surprise you (type q to quit): ')
+	value = input('\nGive me an integer and I\'ll surprise you (type q to quit): ')
 	if value == 'q':
 	#quits the program
 		break
 	number = int(value)
 	if number % 2 == 0:
+	#if the number is even it wont square the number
 		continue
-		#skips the print statement if number is equal
-	print(number, "squared is", number*number)
+		#skips the print statement if number is equal to 0
+	print(number, "squared is", number*number) 
+
+numbers = [2,3,5]
+position = 0
+while position < len(numbers):
+#while position (0) is less than the number of items in the list "numbers"
+	number = numbers[position]
+	# this makes number = 1 since 1 is in the position of zero (position
+	# has the value of zero)
+	if number % 2 == 0:
+	#if there is no remainder for number divided by 2 it prints what is below
+		print('\nFound an even number!')
+		break
+else: #continues the while loop even after the break
+	print('\nNo even number found.')
+
+print("\nPart 4.3, Iteration with for:\n")
+
+superheroes = ['Flash', 'Blue Beetle', 'Beast Boy', 'Ironman', 'Hulk']
+for superhero in superheroes:
+#prints every superheroe in the list
+	print(superhero)
+
+print('')
+
+word = 'pokemon'
+for letter in word:
+# prints every letter in the word pokemon
+	print(letter)
+
+print('')
+
+# when doing an iteration over a dict it prints the keys
+
+starters = {
+	'Rowlett' : 'Grass',
+	'Litten' : 'Fire',
+	'Popplio' : 'Water'
+}
+
+for pokemon in starters: # or starters.keys()
+	print(pokemon)
