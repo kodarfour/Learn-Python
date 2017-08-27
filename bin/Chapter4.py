@@ -140,3 +140,14 @@ for name, type in starters.items():
 #each variable represent either key or value
 #has to include .items for it to include values in the loop
 	print('The pokemon', name, 'is a', type, 'pokemon.')
+
+print('')
+
+valuables = []
+
+for valuable in valuables:
+	print('This house is amazing it has ', valuable, ' !')
+	break
+else:	# if the loop doesnt break that means there is no valuables
+	print('Wow these people are broke.')
+
