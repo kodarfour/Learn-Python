@@ -98,7 +98,7 @@ print("\nPart 4.3, Iteration with for:\n")
 
 superheroes = ['Flash', 'Blue Beetle', 'Beast Boy', 'Ironman', 'Hulk']
 for superhero in superheroes:
-#prints every superheroe in the list
+#prints every superhero in the list
 	print(superhero)
 
 print('')
@@ -119,4 +119,24 @@ starters = {
 }
 
 for pokemon in starters: # or starters.keys()
+# prints every key in the dict
 	print(pokemon)
+
+print('')
+
+for type in starters.values():
+# prints every value in the dict
+	print(pokemon)
+
+print('')
+
+for pokemon in starters.items():
+#prints both values and keys in the dict
+	print(pokemon)
+
+print('')
+
+for name, type in starters.items():  
+#each variable represent either key or value
+#has to include .items for it to include values in the loop
+	print('The pokemon', name, 'is a', type, 'pokemon.')
