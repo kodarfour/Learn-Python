@@ -146,8 +146,18 @@ print('')
 valuables = []
 
 for valuable in valuables:
-	print('This house is amazing it has ', valuable, ' !')
+	print('This house is amazing it has ', valuable, ' !\n')
 	break
 else:	# if the loop doesnt break that means there is no valuables
-	print('Wow these people are broke.')
+	print('Wow these people are broke.\n')
+
+day = ['Mondays', 'Tuesdays', 'Wednesdays']
+snack = ['a popsicle', 'a cookie', 'an orange']
+homework = ['Geometry', 'Biology', 'World History']
+dinner = ['pizza', 'a hamburger', 'a beef pie']
+
+for day, snack, homework, dinner in zip(day, snack, homework, dinner):
+	print('On', day, 'I have', snack, 'for a snack. After my snack ' 
+		  'I have to do my', homework,'homework. Finally, I eat', dinner,
+		  'for dinner.\n')
 
