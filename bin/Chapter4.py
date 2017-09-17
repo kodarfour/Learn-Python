@@ -27,7 +27,7 @@ else:
 
 #elifs are used when there are more than two possibilities.
 #they basically act as a shorter version of use else: if: therefore having the
-#name elif (this is put into my terms of understanding)
+#name elif 
 
 #These are all of the comparison operators
 # == 'equality'
@@ -69,7 +69,8 @@ while True:
 	#capitalizes the first letter of what the user inputs
 
 while True:
-	value = input('\nGive me an integer and I\'ll surprise you (type q to quit): ')
+	value = input('\nGive me an odd integer and I\'ll surprise you (type q to '
+				  'quit): ')
 	if value == 'q':
 	#quits the program
 		break
@@ -126,7 +127,7 @@ print('')
 
 for type in starters.values():
 # prints every value in the dict
-	print(pokemon)
+	print(type)
 
 print('')
 
