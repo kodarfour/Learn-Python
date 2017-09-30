@@ -155,10 +155,30 @@ else:	# if the loop doesnt break that means there is no valuables
 day = ['Mondays', 'Tuesdays', 'Wednesdays']
 snack = ['a popsicle', 'a cookie', 'an orange']
 homework = ['Geometry', 'Biology', 'World History']
-dinner = ['pizza', 'a hamburger', 'a beef pie']
+dinner = ['pizza', 'a hamburger', 'a beef pie', 'a hotdog']
 
 for day, snack, homework, dinner in zip(day, snack, homework, dinner):
 	print('On', day, 'I have', snack, 'for a snack. After my snack ' 
 		  'I have to do my', homework,'homework. Finally, I eat', dinner,
 		  'for dinner.\n')
+#the zip function allows multiple iterations with for
+#the 'a hotdog' string was skipped because the for loop stops if there are
+#no more other strings to go along with it
 
+english = ('Strength', 'Fire', 'Death')
+dovazhul = ('Mulaag', 'Yol', 'Dinok')
+
+print(list(zip(english,dovazhul)))
+#it is possible to use the zip() function as a psuedo dict
+
+print('')
+
+for x in range(5, 0,-1):
+	print(x)
+
+print('')
+
+print(list(range(5, 0, -1)))
+# the range function works like slices (start, stop, step)
+#in this example it will start at 5, stop at one (remember python starts
+#at zero), and will go by steps of -1 (so basically subtracting one every step)
