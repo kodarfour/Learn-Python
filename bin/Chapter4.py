@@ -113,7 +113,7 @@ print('')
 
 # when doing an iteration over a dict it prints the keys
 
-starters = {
+starters = { 
 	'Rowlett' : 'Grass',
 	'Litten' : 'Fire',
 	'Popplio' : 'Water'
@@ -181,4 +181,34 @@ print('')
 print(list(range(5, 0, -1)))
 # the range function works like slices (start, stop, step)
 #in this example it will start at 5, stop at one (remember python starts
-#at zero), and will go by steps of -1 (so basically subtracting one every step)
+#at zero), and will go by steps of -1 (so basically subtracting one every step) 
+
+print('\nPart 4.4, Comprehensions\n')
+
+#it is possible to to list integers using the .append() function
+
+nmbr_list = []
+nmbr_list.append(1)
+nmbr_list.append(2)
+nmbr_list.append(3)
+nmbr_list.append(4)
+nmbr_list.append(5)
+print(nmbr_list)
+
+#it is also possible using an iterator and the range() function
+
+print('')
+
+nmbr_list = []
+for number in range(1,6):
+	nmbr_list.append(number)
+print(nmbr_list)
+
+#finally u could use the output of the range() function 
+
+print('')
+
+nmbr_list = list(range(1,6))
+print(nmbr_list) 
+
+#the best way is by a list comprehension
